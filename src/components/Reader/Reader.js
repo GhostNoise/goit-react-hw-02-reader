@@ -16,12 +16,9 @@ export default class Reader extends Component {
     ).isRequired,
   };
 
-  constructor() {
-    super();
-    this.state = {
-      actualPage: 0,
-    };
-  }
+  state = {
+    actualPage: 0,
+  };
 
   handlePage = event => {
     const { name } = event.target;
